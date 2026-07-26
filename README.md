@@ -87,24 +87,7 @@ A firewall rule was created:
 - Source: LAN net
 - Destination: This Firewall
 - Port: SSH (22)
-## 5. Firewall Configuration
 
-pfSense was configured as the main firewall between the WAN and LAN networks. The LAN interface was assigned the IP address 192.168.1.1/24, DHCP was enabled, and firewall rules were created to control network traffic.
-
----
-
-## 6. SSH Configuration
-
-SSH access was enabled on pfSense to allow secure remote administration from Kali Linux. A LAN firewall rule was created to allow SSH traffic through port 22.
-
-Configuration:
-
-- Protocol: TCP
-- Source: LAN net
-- Destination: This Firewall
-- Port: 22 (SSH)
-
----
 ## 7. Testing and Validation
 
 The configuration was tested from Kali Linux using:
