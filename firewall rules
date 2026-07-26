@@ -1,0 +1,21 @@
+# Firewall Rules
+
+## SSH Access
+
+| Setting | Value |
+|---------|-------|
+| Action | Pass |
+| Interface | LAN |
+| Protocol | TCP |
+| Source | LAN net |
+| Destination | This Firewall |
+| Port | SSH (22) |
+
+Purpose:
+Allow secure remote administration of the pfSense firewall from the LAN.
+
+---
+
+## Default LAN Rule
+
+The default LAN rule allows outbound traffic from LAN clients unless restricted by additional rules.
